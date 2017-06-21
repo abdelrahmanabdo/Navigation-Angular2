@@ -20,13 +20,10 @@ export class AppComponent {
 
   
  
-onclick {
-  this.router : string = [];
-
- this.router.navigate = (['/login']);
-
+onclick() {
+// this.router : string = [];
+this.router.navigate(['/login']);
 }
-
 
 
 }

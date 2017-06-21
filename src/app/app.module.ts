@@ -13,12 +13,10 @@ import { LoginComponent } from './Login';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot ([{path : 'welcome' , component : WelcomeComponent },
-    ,
-    { path: '',
-    redirectTo: '/login',
-    pathMatch: 'full'
-  }])
+    RouterModule.forRoot([
+{ path: '', component: LoginComponent },
+{ path: 'welcome', component: WelcomeComponent }
+])
   ],
   providers: [],
   bootstrap: [AppComponent]
